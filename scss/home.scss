@@ -1,6 +1,11 @@
 .home {
   padding: 67px 0 210px;
 
+  @media (max-width: 768px) {
+    padding: 20px 0 40px;
+  }
+
+
   // .home__content
 
   &__content {
@@ -22,6 +27,11 @@
     & span {
       color: #008000;
     }
+
+    @media (max-width: 768px) {
+      font-size: 41px;
+      margin-bottom: 15px;
+    }
   }
 
   // .home__text
@@ -34,6 +44,11 @@
     text-align: center;
     color: #263238;
     margin-bottom: 48px;
+
+    @media (max-width: 768px) {
+      font-size: 16px;
+      margin-bottom: 15px;
+    }
   }
 
   // .home__form
@@ -42,6 +57,13 @@
     position: relative;
     max-width: 533px;
     margin: 0 auto;
+    display: flex;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      gap: 10px;
+    }
+
   }
 
   // .home__input
@@ -64,6 +86,10 @@
       font-size: 18px;
       color: #263238;
     }
+
+    @media (max-width: 768px) {
+      padding: 20px;
+    }
   }
 
   // .home__get
@@ -80,5 +106,13 @@
     padding: 25px 22px;
     background: #008000;
     border-radius: 10px;
+    display: block;
+
+
+    @media (max-width: 768px) {
+      position: static;
+      width: 100%;
+      transform: translateY(0);
+    }
   }
 }
