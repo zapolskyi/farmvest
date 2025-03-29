@@ -1,0 +1,18 @@
+.brands {
+
+  // .brands__inner
+
+  &__inner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px 15px;
+    flex-wrap: wrap;
+  }
+
+  // .brands__item
+
+  &__item {
+    flex: 0 1 auto;
+  }
+}

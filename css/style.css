@@ -175,6 +175,7 @@ img {
   color: #263238;
   padding: 28px 175px 28px 25px;
   background: rgba(38, 50, 56, 0.1);
+  background-color: rgba(38, 50, 56, 0.1);
   border-radius: 10px;
   width: 100%;
   display: block;
@@ -197,6 +198,17 @@ img {
   padding: 25px 22px;
   background: #008000;
   border-radius: 10px;
+}
+
+.brands__inner {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 30px 15px;
+  flex-wrap: wrap;
+}
+.brands__item {
+  flex: 0 1 auto;
 }
 
 /*# sourceMappingURL=style.css.map */
