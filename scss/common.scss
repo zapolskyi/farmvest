@@ -2,8 +2,16 @@
   font-family: $font-family;
   font-weight: 700;
   font-size: 70px;
-  color: blue;
+  color: #263238;
   margin-bottom: 32px;
+
+  & span {
+    color: #008000;
+  }
+  
+  @media (max-width: 768px) {
+    font-size: 34px;
+  }
 }
 
 .text {
@@ -11,8 +19,11 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 1.77;
-  text-align: center;
   color: #263238;
+
+  @media (max-width: 768px) {
+    font-size: 16px;
+  }
 }
 
 .test {

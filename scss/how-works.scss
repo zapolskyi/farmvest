@@ -1,0 +1,137 @@
+.how-works {
+  padding: 200px 0;
+
+  // .how-works__row
+
+  &__row {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+
+    @media (max-width: 991px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  // .how-works__content
+
+  &__content {
+    max-width: 574px;
+
+    @media (max-width: 991px) {
+      max-width: 100%;
+    }
+  }
+
+  // .how-works__title
+
+  &__title {}
+
+  // .how-works__text
+
+  &__text {
+    margin-bottom: 48px;
+  }
+
+  // .how-works__body
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+  }
+
+  // .how-works__column
+
+  &__column {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+
+    @media (max-width: 768px) {
+      gap: 15px;
+    }
+  }
+
+  // .how-works__icon
+
+  &__icon {
+    flex-shrink: 0;
+    border-radius: 50%;
+    width: 110px;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(#008000, .1);
+
+    @media (max-width: 768px) {
+      width: 85px;
+      height: 85px;
+    }
+  }
+
+  // .how-works__info
+
+  &__info {}
+
+  // .how-works__info-title
+
+  &__info-title {
+    font-family: $font-family;
+    font-weight: 700;
+    font-size: 20px;
+    color: #263238;
+    margin-bottom: 16px;
+  }
+
+  // .how-works__info-text
+
+  &__info-text {
+    font-family: $font-family;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #263238;
+  }
+
+  // .how-works__image
+
+  &__image {
+    justify-self: end;
+    position: relative;
+    background: rgba(0, 128, 0, 0.05);
+    max-width: 750px;
+    width: 100%;
+    height: 936px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 0 45px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 30px;
+      right: -120px;
+      z-index: 2;
+      background: url(../images/how-works/circles.svg) no-repeat center;
+      background-size: cover;
+      width: 640px;
+      height: 640px;
+    }
+
+    & img {
+      position: relative;
+      object-fit: cover;
+      z-index: 5;
+    }
+
+
+  }
+}
+
+.container {}
